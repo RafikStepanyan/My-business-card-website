@@ -1,0 +1,94 @@
+.home {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  padding: 0px 100px;
+}
+
+.first1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 25px;
+  h1 {
+    color: white;
+    font-size: 45px;
+  }
+  h2 {
+    color: #17a4eb;
+    font-size: 35px;
+  }
+  p {
+    color: white;
+    font-size: 18px;
+  }
+  div {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.hire {
+  background: #17a4eb;
+  border: 5px solid #17a4eb;
+  border-radius: 10px;
+  padding: 10px;
+  color: #0a1d2d;
+  font-weight: bolder;
+  font-size: 20px;
+  &:hover {
+    background: #0a1d2d;
+    border-radius: 10px;
+    color: #17a4eb;
+  }
+}
+
+.talk {
+  background: #0a1d2d;
+  border: 5px solid #17a4eb;
+  border-radius: 10px;
+  padding: 10px;
+  color: #17a4eb;
+  font-weight: bolder;
+  font-size: 20px;
+  &:hover {
+    background: #17a4eb;
+    border-radius: 10px;
+    color: #0a1d2d;
+  }
+}
+
+.second1 {
+  background: url("../../../public/img/avatar.jpg");
+  background-size: cover;
+  border-radius: 85px;
+  box-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width: 1130px) {
+  .home {
+    justify-content: center;
+    gap: 60px;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: repeat(2, 500px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .home {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 500px 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .first1 {
+    text-align: center;
+    div {
+      justify-content: center;
+    }
+  }
+}

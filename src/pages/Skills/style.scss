@@ -1,0 +1,29 @@
+.skills{
+    display: grid;
+    padding: 0px 100px;
+    h1{
+        color: #17a4eb;
+        font-size: 45px;
+    }
+    h2{
+        color: #17a4eb;
+        font-size: 35px;
+    }
+    p{
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.show{
+    display: grid;
+    height: 350px;
+    overflow-y: scroll;
+    gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .skills{
+        padding: 0px 30px;
+    }
+}

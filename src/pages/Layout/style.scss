@@ -1,0 +1,11 @@
+.layout{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 90%;
+    height: 90vh;
+    background: #0a1d2d;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    box-shadow: 15px 15px 20px black;
+}

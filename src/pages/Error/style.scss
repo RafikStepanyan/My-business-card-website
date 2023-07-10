@@ -1,0 +1,27 @@
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 10px;
+    font-style: italic;
+    h1{
+        color: #17a4eb;
+        font-size: 145px;
+    }
+    h2{
+        color: white;
+        font-size: 125px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .error{
+        h1{
+            font-size: 100px;
+        }
+        h2{
+            font-size: 90px;
+        }
+    }
+}

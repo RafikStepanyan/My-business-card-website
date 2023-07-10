@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  width: 100%;
+  padding-left: 100px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  svg {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #06a9f3;
+    transition: 0.5s all;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .footer{
+    padding: 0;
+    justify-content: center;
+  }
+}

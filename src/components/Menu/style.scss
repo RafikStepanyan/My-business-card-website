@@ -1,0 +1,40 @@
+.menu {
+  padding: 30px 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: whitesmoke;
+  }
+  ul {
+    display: flex;
+    gap: 50px;
+    a {
+      font-size: 20px;
+      color: #06a9f3;
+      font-weight: 600;
+      transition: 0.5s all;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .menu {
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .menu {
+    ul {
+      gap: 20px;
+      a {
+        font-size: 17px;
+      }
+    }
+  }
+}

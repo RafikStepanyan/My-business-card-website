@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0px 100px;
+  div{
+    display: flex;
+    align-items: center;
+    gap: 15px
+  };
+  h1 {
+    color: #17a4eb;
+    font-size: 35px;
+  }
+  hr {
+    background: white;
+  }
+  p {
+    font-size: 20px;
+    color: #06a9f3;
+  }
+  a {
+    font-size: 20px;
+    color: #06a9f3;
+    font-weight: 600;
+    transition: 0.5s all;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    color: #06a9f3;
+    transition: 0.5s all;
+  }
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        padding: 0px 30px;
+    }
+}
